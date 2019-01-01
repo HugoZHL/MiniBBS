@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)https://v3.bootcss.com/examples/jumbotron/ -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="The user profile page in minibbs.">
+    <meta name="author" content="Hugo Z">
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+
+    <title>MiniBBS User Profile</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" >
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/ie10-viewport-bug-workaround.css') }}" >
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/jumbotron.css') }}">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="{{ url_for('show_all_sections') }}">MiniBBS</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <div class="navbar-left">
+            <a class="navbar-brand" href="{{ url_for('show_profile') }}"><p> User: {{ username }} </p></a>
+             <div class="navbar-brand">Profile</div>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <form class="navbar-form navbar-right" method="post">
+                {% if authorized %}
+                <a href="{{ url_for('edit_profile') }}" class="btn btn-warning">Edit Profile</a>
+                {% endif %}
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Anything interesting?" name="searching" required>
+              </div>
+              <button type="submit" class="btn btn-primary">Search</button>
+              <a href="{{ url_for('search') }}" class="btn btn-success">Advanced Search</a>
+              {% if admin %}
+              <a href="{{ url_for('manage_user') }}" class="btn btn-warning">Manage Users</a>
+              {% endif %}
+            </form>
+          </div><!--/.navbar-collapse -->
+        </div>
+      </div>
+    </nav>
+
+    <div id="authorized" d="{{ authorized }}" style="display:none"></div>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="container" style="margin-top:1vw">
+    <div id="dataid" d="{{ target_username }}" style="display:none"></div>
+
+
+        <script type="text/javascript">
+        if (window.XMLHttpRequest)
+        {// code for IE7+, Firefox, Chrome, Opera, Safari
+          xmlhttp=new XMLHttpRequest();
+        }
+        else
+        {// code for IE6, IE5
+          xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+        }
+
+
+        let filename = "../static/xml/user_";
+        let temp_username = document.getElementById('dataid').getAttribute('d');
+        filename = filename+temp_username;
+        filename = filename+".xml";
+
+
+        xmlhttp.open("GET", filename+"?t="+Math.random(), false);
+        xmlhttp.setRequestHeader("Content-type", "text/xml;charset=jbk");
+        //xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=utf-8");
+
+
+        xmlhttp.send();
+        xmlDoc=xmlhttp.responseXML;
+        let user = xmlDoc.getElementsByTagName("User")[0];
+        document.write("<div class='page-header'><h1>");
+        document.write(user.getElementsByTagName("UserName")[0].childNodes[0].nodeValue);
+        let info = user.getElementsByTagName("Info")[0];
+        let basicinfo = info.getElementsByTagName("BasicInfo")[0];
+        let otherinfo = info.getElementsByTagName("OtherInfo")[0];
+        document.write("</h1><div class='row'><div class='col-md-1'><h3>");
+        document.write(basicinfo.getElementsByTagName("Gender")[0].childNodes[0].nodeValue);
+        document.write("</h3></div><div class='col-md-2'><h3> Level: ");
+        document.write(basicinfo.getElementsByTagName("Level")[0].childNodes[0].nodeValue);
+        document.write("</h3></div><div class='col-md-3'><h3>Birthday: ");
+        document.write(basicinfo.getElementsByTagName("Birthday")[0].childNodes[0].nodeValue);
+        document.write("</h3></div><div class='col-md-2'><h3>Age: ");
+        document.write(basicinfo.getElementsByTagName("Age")[0].childNodes[0].nodeValue);
+        document.write("</h3></div><div class='col-md-4'><h3>Email: ");
+        document.write(basicinfo.getElementsByTagName("Email")[0].childNodes[0].nodeValue);
+        document.write("</h3></div></div></div>");
+        let posts = otherinfo.getElementsByTagName("Posts")[0].getElementsByTagName("Post");
+        let replies = otherinfo.getElementsByTagName("Replies")[0].getElementsByTagName("Reply");
+
+        for (i=0;i<posts.length;i++)
+        {
+          document.write("<div class='jumbotron'><div class='container'><p>Section: ");
+          document.write(posts[i].getElementsByTagName("Block")[0].childNodes[0].nodeValue);
+          document.write("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; User: ");
+          document.write(posts[i].getElementsByTagName("PostUser")[0].childNodes[0].nodeValue);
+          document.write("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Post-ID: ");
+          document.write(posts[i].getElementsByTagName("No")[0].childNodes[0].nodeValue);
+          document.write("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Post Time: ");
+          document.write(posts[i].getElementsByTagName("PostTime")[0].childNodes[0].nodeValue);
+          document.write("</p><h1 style='font-size:50px'>Title: ");
+          document.write(posts[i].getElementsByTagName("Title")[0].childNodes[0].nodeValue);
+          document.write("</h1><h2>Content: ");
+          document.write(posts[i].getElementsByTagName("Content")[0].childNodes[0].nodeValue);
+          document.write("</h2><br><p>Clicks: ");
+          document.write(posts[i].getElementsByTagName("Clicks")[0].childNodes[0].nodeValue);
+          document.write("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Replies: ");
+          document.write(posts[i].getElementsByTagName("ReplyNum")[0].childNodes[0].nodeValue);
+          document.write("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+          document.write("<form method='post' action='/post'>");
+          document.write("<button type='submit' class='btn btn-primary btn-lg' name='real_id' value="+posts[i].getElementsByTagName("No")[0].childNodes[0].nodeValue+">Enter</button> ");
+
+          if(document.getElementById('authorized').getAttribute('d') == "True"){
+          document.write("<button type='submit' formaction='/delete_post/1' class='btn btn-danger btn-lg' name='real_id' value="+posts[i].getElementsByTagName("No")[0].childNodes[0].nodeValue+">Delete</button>");
+          }
+          document.write("</form></p></div></div>");
+        }
+
+        for (i=0;i<replies.length;i++)
+        {
+          document.write("<div class='jumbotron'><div class='container'><p>Post: ");
+          document.write(replies[i].getElementsByTagName("Title")[0].childNodes[0].nodeValue);
+          document.write("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; User: ");
+          document.write(replies[i].getElementsByTagName("PostUser")[0].childNodes[0].nodeValue);
+          document.write("</p><h2>Reply: ");
+          document.write(replies[i].getElementsByTagName("ReplyContent")[0].childNodes[0].nodeValue);
+          document.write("</h2><br><p>Floor: ");
+          document.write(replies[i].getElementsByTagName("Floor")[0].childNodes[0].nodeValue);
+          document.write("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ReplyUser: ");
+          document.write(replies[i].getElementsByTagName("ReplyUser")[0].childNodes[0].nodeValue);
+          document.write("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ReplyTime: ");
+          document.write(replies[i].getElementsByTagName("ReplyTime")[0].childNodes[0].nodeValue);
+          document.write("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Praises: ");
+          document.write(replies[i].getElementsByTagName("PraiseNum")[0].childNodes[0].nodeValue);
+          document.write("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+          document.write("<form method='post' action='/post'>");
+          document.write("<button type='submit' class='btn btn-primary btn-lg' name='real_id' value="+replies[i].getElementsByTagName("PostID")[0].childNodes[0].nodeValue+">Enter</button>");
+          document.write("</form></p></div></div>");
+        }
+        document.write("<hr><footer><p>Copyright © Database Course Team; Credit to: Hugo Z, pfTong, Alpha Wu.</p></footer>");
+        xmlhttp.close()
+      </script>
+    </div>
+
+   <script src="{{ url_for('static', filename='css/jquery-3.3.1.min.js') }}"></script>
+
+</body></html>

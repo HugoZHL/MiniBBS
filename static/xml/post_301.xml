@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Post
+  SYSTEM 'postprofile.dtd'>
+	<Post>
+		<No>301</No>
+		<PostUser>User0</PostUser>
+		<Title>Hello world!!!</Title>
+		<Content>I am really new here. Lets start chatting!</Content>
+		<PostTime>2018-12-30 01:59:33</PostTime>
+		<Clicks>4</Clicks>
+		<ReplyNum>0</ReplyNum>
+		<Replies/>
+	</Post>

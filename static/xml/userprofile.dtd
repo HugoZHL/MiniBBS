@@ -1,0 +1,29 @@
+        <!ELEMENT User (UserName, Info)>
+        <!ELEMENT Info (BasicInfo, OtherInfo)>
+        <!ELEMENT BasicInfo (Gender, Age, Level, Birthday, Email)>
+        <!ELEMENT OtherInfo (Posts, Replies)>
+        <!ELEMENT Posts (Post*)>
+        <!ELEMENT Post (No, Block, PostUser, Title, Content, PostTime, Clicks, ReplyNum)>
+        <!ELEMENT Replies (Reply*)>
+        <!ELEMENT Reply (Title, PostUser, PostID, OriginalNo, Floor, ReplyUser, ReplyContent, ReplyTime, PraiseNum)>
+        <!ELEMENT UserName (#PCDATA)>
+        <!ELEMENT Gender (#PCDATA)>
+        <!ELEMENT Age (#PCDATA)>
+        <!ELEMENT Level (#PCDATA)>
+        <!ELEMENT Birthday (#PCDATA)>
+        <!ELEMENT Email (#PCDATA)>
+        <!ELEMENT No (#PCDATA)>
+        <!ELEMENT Block (#PCDATA)>
+        <!ELEMENT PostUser (#PCDATA)>
+        <!ELEMENT PostID (#PCDATA)>
+        <!ELEMENT Title (#PCDATA)>
+        <!ELEMENT Content (#PCDATA)>
+        <!ELEMENT PostTime (#PCDATA)>
+        <!ELEMENT Clicks (#PCDATA)>
+        <!ELEMENT ReplyNum (#PCDATA)>
+        <!ELEMENT OriginalNo (#PCDATA)>
+        <!ELEMENT Floor (#PCDATA)>
+        <!ELEMENT ReplyUser (#PCDATA)>
+        <!ELEMENT ReplyContent (#PCDATA)>
+        <!ELEMENT ReplyTime (#PCDATA)>
+        <!ELEMENT PraiseNum (#PCDATA)>

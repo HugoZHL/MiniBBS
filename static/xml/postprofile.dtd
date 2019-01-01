@@ -1,0 +1,17 @@
+        <!ELEMENT Post (No, PostUser, Block, Title, Content, PostTime, Clicks, ReplyNum, Replies)>
+        <!ELEMENT Replies (Reply*)>
+        <!ELEMENT Reply (Floor, OriginalNo, ReplyUser, ReplyContent, ReplyTime, PraiseNum)>
+        <!ELEMENT No (#PCDATA)>
+        <!ELEMENT PostUser (#PCDATA)>
+        <!ELEMENT Block (#PCDATA)>
+        <!ELEMENT PostTime (#PCDATA)>
+        <!ELEMENT Title (#PCDATA)>
+        <!ELEMENT Content (#PCDATA)>
+        <!ELEMENT Clicks (#PCDATA)>
+        <!ELEMENT ReplyNum (#PCDATA)>
+        <!ELEMENT Floor (#PCDATA)>
+        <!ELEMENT OriginalNo (#PCDATA)>
+        <!ELEMENT ReplyUser (#PCDATA)>
+        <!ELEMENT ReplyContent (#PCDATA)>
+        <!ELEMENT ReplyTime (#PCDATA)>
+        <!ELEMENT PraiseNum (#PCDATA)>

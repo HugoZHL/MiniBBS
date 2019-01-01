@@ -1,0 +1,144 @@
+Minibbs方象垂幹秀
+
+CREATE DATABASE minibbs;
+
+use minibbs;
+
+CREATE TABLE IF NOT EXISTS `minibbs`.`User` (
+  `UserNo` INT NOT NULL AUTO_INCREMENT,
+  `UserName` VARCHAR(32) NOT NULL UNIQUE,
+  `Gender` enum('Male','Female')[pT1] NOT NULL,
+  `Birthday` DATE NOT NULL,
+  `Password` VARCHAR(45) NOT NULL,
+  `Email` VARCHAR(45) NOT NULL,
+  `EXP` INT NOT NULL DEFAULT 0,
+  `Admin` BOOLEAN NOT NULL DEFAULT FALSE,
+  `RegisterTime` TIM[pT2]ESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`UserNo`));
+
+CREATE TABLE IF NOT EXISTS `minibbs`.`Section` (
+　`SectionNo` SMALLINT NOT NULL AUTO_INCREMENT,
+  `SectionName` VARCHAR(32) NOT NULL UNIQUE,
+  `SectionDesc` TEXT NOT NULL,
+  `Master` INT NOT NULL,
+  PRIMARY KEY (`SectionNo`),
+  INDEX `SectionNorm` (`SectionNo` ASC) VISIBLE,
+  CONSTRAINT `SecMas`
+    FOREIGN KEY (`Master`)
+    REFERENCES `minibbs`.`User` (`UserNo`)
+    ON DELETE CASCADE
+　　ON UPDATE CASCADE);
+
+CREATE TABLE IF NOT EXISTS `minibbs`.`Post` (
+  `PostNo` INT NOT NULL AUTO_INCREMENT,
+  `UserNo` INT NOT NULL,
+  `SectionNo` SMALLINT NOT NULL,
+  `Title` VARCHAR(45) NOT NULL,
+  `Content` LONGTEXT NOT NULL,
+  `Clicks` INT NOT NULL DEFAULT 0,
+  `PostTime` TIM[pT3]ESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `Replies` INT NOT NULL DEFAULT 0,
+  PRIMARY KEY (`PostNo`),
+  INDEX `PostingTime` (`PostTime` DESC) VISIBLE,
+  CONSTRAINT `PostUser`
+    FOREIGN KEY (`UserNo`)
+　　REFERENCES `minibbs`.`User` (`UserNo`)
+    ON DELETE CASCADE
+　　ON UPDATE CASCADE,
+  CONSTRAINT `PostSec`
+	FOREIGN KEY (`SectionNo`)
+	REFERENCES `minibbs`.`Section` (`SectionNo`)
+	ON DELETE CASCADE
+	ON UPDATE CASCADE);
+
+CREATE TABLE IF NOT EXISTS `minibbs`.`Reply` (
+  `ReplyNo` INT NOT NULL AUTO_INCREMENT,
+  `Floor` INT NOT NULL,
+  `PostNO` INT NOT NULL,
+  `UserNo` INT NOT NULL,
+  `ReplyContent` LONGTEXT NOT NULL,
+  `ReplyTime` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `PraiseNum` INT NOT NULL DEFAULT 0,
+  PRIMARY KEY (`ReplyNo`),
+  INDEX `PostReply` (`PostNO` ASC) VISIBLE,
+  CONSTRAINT `fromPost`
+    FOREIGN KEY (`PostNo`)
+    REFERENCES `minibbs`.`Post` (`PostNo`)
+    ON DELETE CASCADE
+　　ON UPDATE CASCADE,
+  CONSTRAINT `fromUser`
+	FOREIGN KEY (`UserNo`)
+	REFERENCES `minibbs`.`User` (`UserNo`)
+	ON DELETE CASCADE
+	ON UPDATE CASCADE);
+
+
+CREATE TABLE IF NOT EXISTS `minibbs`.`MailBox` (
+	`UserNo` INT NOT NULL,
+	`TagTime` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	PRIMARY KEY(`UserNo`, `TagTime`));
+
+
+CREATE VIEW UserSection as
+      SELECT UserNo, SectionName, Posts  FROM (Section natural INNER JOIN
+(SELECT UserNo, SectionNo, count(PostNo) as Posts FROM Post as UserPost GROUP BY UserNo, SectionNo) as s);
+
+CREATE TRIGGER repliesOfPost BEFORE INSERT ON `minibbs`.`Reply`
+	FOR EACH ROW
+	BEGIN
+		SET NEW.Floor=1+(SELECT Replies FROM Post WHERE Post.PostNo=NEW.PostNo);
+		UPDATE Post SET Replies=Replies+1
+			WHERE Post.PostNo = NEW.PostNo;
+		UPDATE User SET EXP = EXP+1
+			WHERE User.UserNo = NEW.UserNo;
+	END;
+
+CREATE TRIGGER EXPByPost AFTER INSERT ON `minibbs`.`Post`
+	FOR EACH ROW
+	BEGIN
+		UPDATE User SET EXP = EXP+2
+			WHERE User.UserNo = NEW.UserNo; 
+	END;
+
+CREATE TRIGGER CheckAnomalies AFTER INSERT ON `minibbs`.`Post`
+	FOR EACH ROW
+	BEGIN
+		DECLARE PostNum INT;
+		SET PostNum = (SELECT COUNT(*) FROM Post WHERE UserNo = NEW.UserNo
+					AND (TIMESTAMPDIFF(MINUTE, PostTime, NEW.PostTime)<=10));
+		IF(PostNum>10)
+		THEN
+			INSERT INTO MailBox(UserNo, TagTime) 
+　　VALUES(NEW.UserNo, CURRENT_TIMESTAMP);
+		END IF; 
+	END;
+
+
+
+
+
+insert into User (UserName, Gender, Birthday, Password, Admin, Email)
+	values ('HugoZ', 'Male', '1998-01-01', '****', TRUE, 'example@com');
+
+insert into User (UserName, Gender, Birthday, Password, Admin, Email)
+	values ('TPF', 'Male', '1998-01-01', '****', TRUE, 'example@com');
+
+insert into User (UserName, Gender, Birthday, Password, Admin, Email)
+	values ('WSB', 'Male', '1998-01-01', '****', TRUE, 'example@com');
+
+insert into Section (SectionName, SectionDesc, Master)
+	values ('School Life', 'This section is for sharing school life.', 1);
+
+insert into Section (SectionName, SectionDesc, Master)
+	values ('Lectures', 'This section is for lecture information.', 1);
+
+insert into Section (SectionName, SectionDesc, Master)
+	values ('Job', 'This section is for job information.', 1);
+
+insert into Section (SectionName, SectionDesc, Master)
+	values ('Academic discuss', 'This section is for academic discussion.', 1);
+
+insert into Section (SectionName, SectionDesc, Master)
+	values ('Sports', 'This section is for sport events information.', 1);
+
+

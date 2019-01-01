@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Post
+  SYSTEM 'postprofile.dtd'>
+	<Post>
+		<No>345</No>
+		<PostUser>Complicated</PostUser>
+		<Block>School Life</Block>
+		<Title>有哪些有趣的讲座呀？</Title>
+		<Content>求问~</Content>
+		<PostTime>2018-12-31 18:54:32</PostTime>
+		<Clicks>7</Clicks>
+		<ReplyNum>2</ReplyNum>
+		<Replies>
+			<Reply>
+				<Floor>1</Floor>
+				<OriginalNo>1753</OriginalNo>
+				<ReplyUser>HugoZ</ReplyUser>
+				<ReplyContent>有很多哦</ReplyContent>
+				<ReplyTime>2019-01-01 00:52:50</ReplyTime>
+				<PraiseNum>1</PraiseNum>
+			</Reply>
+			<Reply>
+				<Floor>2</Floor>
+				<OriginalNo>1754</OriginalNo>
+				<ReplyUser>HugoZ</ReplyUser>
+				<ReplyContent>可以上公众号查找的</ReplyContent>
+				<ReplyTime>2019-01-01 00:52:55</ReplyTime>
+				<PraiseNum>3</PraiseNum>
+			</Reply>
+		</Replies>
+	</Post>

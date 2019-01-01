@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Section
+  SYSTEM 'secprofile.dtd'>
+	<Section>
+		<Info>
+			<SecId>8</SecId>
+			<SecName>test</SecName>
+			<Master>HugoZ</Master>
+			<PostNum>0</PostNum>
+			<Description>testtest</Description>
+		</Info>
+		<Posts/>
+	</Section>

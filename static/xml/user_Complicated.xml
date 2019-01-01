@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE User
+  SYSTEM 'userprofile.dtd'>
+	<User>
+		<UserName>Complicated</UserName>
+		<Info>
+			<BasicInfo>
+				<Gender>Male</Gender>
+				<Age>0</Age>
+				<Level>3</Level>
+				<Birthday>2018-12-31</Birthday>
+				<Email>no@no</Email>
+			</BasicInfo>
+			<OtherInfo>
+				<Posts>
+					<Post>
+						<No>346</No>
+						<Block>Lectures</Block>
+						<PostUser>Complicated</PostUser>
+						<Title>讲座好玩吗</Title>
+						<Content>好不好玩呀</Content>
+						<PostTime>2018-12-31 18:54:59</PostTime>
+						<Clicks>0</Clicks>
+						<ReplyNum>0</ReplyNum>
+					</Post>
+					<Post>
+						<No>345</No>
+						<Block>School Life</Block>
+						<PostUser>Complicated</PostUser>
+						<Title>有哪些有趣的讲座呀？</Title>
+						<Content>求问~</Content>
+						<PostTime>2018-12-31 18:54:32</PostTime>
+						<Clicks>0</Clicks>
+						<ReplyNum>0</ReplyNum>
+					</Post>
+					<Post>
+						<No>344</No>
+						<Block>School Life</Block>
+						<PostUser>Complicated</PostUser>
+						<Title>有哪些有趣的讲座呀？</Title>
+						<Content>求问~</Content>
+						<PostTime>2018-12-31 18:52:14</PostTime>
+						<Clicks>0</Clicks>
+						<ReplyNum>0</ReplyNum>
+					</Post>
+					<Post>
+						<No>343</No>
+						<Block>School Life</Block>
+						<PostUser>Complicated</PostUser>
+						<Title>可以说中文吗？</Title>
+						<Content>这里可以用中文吗？
+
+</Content>
+						<PostTime>2018-12-31 18:49:15</PostTime>
+						<Clicks>0</Clicks>
+						<ReplyNum>0</ReplyNum>
+					</Post>
+					<Post>
+						<No>342</No>
+						<Block>School Life</Block>
+						<PostUser>Complicated</PostUser>
+						<Title>Hey man, anyone go hiking this weekend?</Title>
+						<Content>Come with me and enjoy your life!</Content>
+						<PostTime>2018-12-31 18:45:56</PostTime>
+						<Clicks>12</Clicks>
+						<ReplyNum>1</ReplyNum>
+					</Post>
+				</Posts>
+				<Replies>
+					<Reply>
+						<Title>Good lecture!</Title>
+						<PostUser>User0</PostUser>
+						<PostID>2</PostID>
+						<OriginalNo>1752</OriginalNo>
+						<Floor>11</Floor>
+						<ReplyUser>Complicated</ReplyUser>
+						<ReplyContent>which one?</ReplyContent>
+						<ReplyTime>2018-12-31 18:55:24</ReplyTime>
+						<PraiseNum>0</PraiseNum>
+					</Reply>
+					<Reply>
+						<Title>Hey man, anyone go hiking this weekend?</Title>
+						<PostUser>Complicated</PostUser>
+						<PostID>342</PostID>
+						<OriginalNo>1751</OriginalNo>
+						<Floor>1</Floor>
+						<ReplyUser>Complicated</ReplyUser>
+						<ReplyContent>anyone?</ReplyContent>
+						<ReplyTime>2018-12-31 18:46:30</ReplyTime>
+						<PraiseNum>9</PraiseNum>
+					</Reply>
+				</Replies>
+			</OtherInfo>
+		</Info>
+	</User>

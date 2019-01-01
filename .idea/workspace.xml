@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="61a172f9-2e99-4c3a-b2ea-a5bc30950d9d" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="MiniBBS" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="minibbs.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/minibbs.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="6973">
+              <caret line="376" column="14" selection-start-line="376" selection-start-column="14" selection-end-line="376" selection-end-column="14" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="database.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4671">
+              <caret line="1050" column="50" selection-start-line="1050" selection-start-column="50" selection-end-line="1050" selection-end-column="50" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+                <element signature="e#323#3749#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="XML Properties File" />
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>edit_section</find>
+      <find>update_</find>
+      <find>calculate_age</find>
+      <find>clicks</find>
+      <find>post</find>
+      <find>/post</find>
+      <find>post.html</find>
+      <find>section</find>
+      <find>make_post_xml</find>
+      <find>add_reply</find>
+      <find>delete</find>
+      <find>return</find>
+      <find>redirect('</find>
+      <find>searchresult</find>
+      <find>clicks_</find>
+      <find>get_tar</find>
+      <find>add_po</find>
+      <find>#</find>
+      <find>blockID</find>
+      <find>contentType</find>
+      <find>UTF-8</find>
+      <find>utf-8</find>
+      <find>xml</find>
+      <find>print</find>
+      <find>writexml</find>
+      <find>add_post</find>
+      <find>all_sections</find>
+      <find>edit</find>
+      <find>map(int, request.cookies[&quot;is_master&quot;].split(&quot;,&quot;))</find>
+      <find>qq</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>&gt;</replace>
+      <replace>let</replace>
+      <replace>document.write(</replace>
+      <replace>temp_user{</replace>
+      <replace>is_master</replace>
+      <replace>addpost</replace>
+      <replace>temp_user[</replace>
+      <replace>temp_post</replace>
+      <replace>root</replace>
+      <replace>sectionid</replace>
+      <replace>row2</replace>
+      <replace>return redirect('/result_page/%s' % searching)</replace>
+      <replace>utf-8</replace>
+      <replace>UTF-8</replace>
+      <replace>list(map(int, request.cookies[&quot;is_master&quot;].split(&quot;,&quot;)))</replace>
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/handler.py" />
+        <option value="$PROJECT_DIR$/templates/allplates.html" />
+        <option value="$PROJECT_DIR$/templates/homepage.html" />
+        <option value="$PROJECT_DIR$/templates/editsection.html" />
+        <option value="$PROJECT_DIR$/templates/add_user.html" />
+        <option value="$PROJECT_DIR$/static/xml/constraint.dtd" />
+        <option value="$PROJECT_DIR$/static/xml/post_1.xml" />
+        <option value="$PROJECT_DIR$/templates/login.html" />
+        <option value="$PROJECT_DIR$/templates/searchresult.html" />
+        <option value="$PROJECT_DIR$/templates/compare.html" />
+        <option value="$PROJECT_DIR$/templates/search.html" />
+        <option value="$PROJECT_DIR$/static/xml/user_User0.xml" />
+        <option value="$PROJECT_DIR$/templates/add_section.html" />
+        <option value="$PROJECT_DIR$/templates/register.html" />
+        <option value="$PROJECT_DIR$/templates/edit_profile.html" />
+        <option value="$PROJECT_DIR$/static/xml/user_HugoZ.xml" />
+        <option value="$PROJECT_DIR$/static/xml/sec_School Life.xml" />
+        <option value="$PROJECT_DIR$/templates/activeusers_posts.html" />
+        <option value="$PROJECT_DIR$/templates/active_users.html" />
+        <option value="$PROJECT_DIR$/templates/hot_post.html" />
+        <option value="$PROJECT_DIR$/templates/clicks_replies.html" />
+        <option value="$PROJECT_DIR$/static/xml/secprofile.dtd" />
+        <option value="$PROJECT_DIR$/static/xml/userprofile.dtd" />
+        <option value="$PROJECT_DIR$/templates/allsections.html" />
+        <option value="$PROJECT_DIR$/templates/manage_user.html" />
+        <option value="$PROJECT_DIR$/static/xml/postprofile.dtd" />
+        <option value="$PROJECT_DIR$/templates/post.html" />
+        <option value="$PROJECT_DIR$/templates/section.html" />
+        <option value="$PROJECT_DIR$/templates/profile.html" />
+        <option value="$PROJECT_DIR$/static/js/jquery-3.3.1.min.js" />
+        <option value="$PROJECT_DIR$/wsgi.py" />
+        <option value="$PROJECT_DIR$/minibbs.py" />
+        <option value="$PROJECT_DIR$/database.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="20" />
+    <option name="y" value="40" />
+    <option name="width" value="2696" />
+    <option name="height" value="1584" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="MiniBBS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MiniBBS" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MiniBBS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MiniBBS" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SearchEverywhereHistoryKey" value="mod_wsgi&#9;FILE&#9;file://C:/Users/ZHL/PycharmProjects/MiniBBS/venv/Lib/site-packages/mod_wsgi-4.5.24+ap24vc14.dist-info" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings sdk-home="C:\Users\ZHL\Anaconda3\python.exe">
+        <option name="mySdkHome" value="C:\Users\ZHL\Anaconda3\python.exe" />
+      </console-settings>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ZHL\PycharmProjects\MiniBBS\static\js" />
+      <recent name="C:\Users\ZHL\PycharmProjects\MiniBBS\static" />
+      <recent name="C:\Users\ZHL\PycharmProjects\MiniBBS\templates" />
+      <recent name="C:\Users\ZHL\PycharmProjects\MiniBBS\xml" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ZHL\PycharmProjects\MiniBBS\templates" />
+      <recent name="C:\Users\ZHL\PycharmProjects\MiniBBS\static\xml" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="PythonConfigurationType" factoryName="Python">
+      <module name="MiniBBS" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\ZHL\Anaconda3\envs\MiniBBS\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="61a172f9-2e99-4c3a-b2ea-a5bc30950d9d" name="Default" comment="" />
+      <created>1545371220549</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1545371220549</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-6" y="-6" width="1381" height="885" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48387095" visible="true" weight="0.24981412" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Python Console" order="8" weight="0.328" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32933334" />
+      <window_info id="Structure" order="1" sideWeight="0.516129" side_tool="true" visible="true" weight="0.24981412" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.29733333" />
+      <window_info id="Favorites" order="2" sideWeight="0.5009488" side_tool="true" weight="0.24981412" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="10" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/templates/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1615">
+          <caret line="85" column="33" selection-start-line="85" selection-start-column="28" selection-end-line="85" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/homepage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1216">
+          <caret line="64" column="34" lean-forward="true" selection-start-line="64" selection-start-column="34" selection-end-line="64" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1311">
+          <caret line="70" column="81" selection-start-line="70" selection-start-column="81" selection-end-line="70" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/allsections.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1102">
+          <caret line="58" column="40" lean-forward="true" selection-start-line="58" selection-start-column="40" selection-end-line="58" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/minibbs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="988">
+          <caret line="52" column="87" selection-start-line="52" selection-start-column="87" selection-end-line="52" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/homepage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="88" selection-start-line="19" selection-start-column="44" selection-end-line="20" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.py" />
+    <entry file="file://$PROJECT_DIR$/static/xml/postprofile.dtd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="25" lean-forward="true" selection-end-line="14" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/pymysql/_auth.py" />
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/_internal.py" />
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/flask/helpers.py" />
+    <entry file="file://$USER_HOME$/Anaconda3/pkgs/werkzeug-0.14.1-py37_0/Lib/site-packages/werkzeug/wrappers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1110" column="26" lean-forward="true" selection-start-line="1110" selection-start-column="26" selection-end-line="1110" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/http/cookiejar.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31027">
+          <caret line="1640" column="8" selection-start-line="1640" selection-start-column="8" selection-end-line="1640" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/flask/globals.py" />
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/local.py" />
+    <entry file="file://$PROJECT_DIR$/templates/homepage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="81" column="31" selection-start-line="81" selection-start-column="31" selection-end-line="81" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="52" column="73" lean-forward="true" selection-start-line="51" selection-start-column="32" selection-end-line="52" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/flask/app.py" />
+    <entry file="file://$PROJECT_DIR$/templates/compare.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="49" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/xml/dom/minidom.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="947">
+          <caret line="1326" column="16" selection-start-line="1326" selection-start-column="8" selection-end-line="1326" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/editsection.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1235">
+          <caret line="65" column="58" lean-forward="true" selection-start-line="65" selection-start-column="58" selection-end-line="65" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/add_section.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="48" column="84" selection-start-line="48" selection-start-column="84" selection-end-line="48" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/edit_profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="47" column="93" selection-start-line="47" selection-start-column="93" selection-end-line="47" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/xml/sec_School Life.xml" />
+    <entry file="file://$PROJECT_DIR$/static/xml/user_HugoZ.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="96" column="39" selection-end-line="128" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/searchresult.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="78" column="129" lean-forward="true" selection-start-line="73" selection-start-column="30" selection-end-line="78" selection-end-column="129" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/jinja2/environment.py" />
+    <entry file="file://$PROJECT_DIR$/templates/active_users.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="87" column="16" lean-forward="true" selection-end-line="111" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/hot_post.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="92" column="10" lean-forward="true" selection-start-line="69" selection-start-column="50" selection-end-line="92" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/xml/secprofile.dtd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/xml/userprofile.dtd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/manage_user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="56" column="37" selection-start-line="56" selection-start-column="37" selection-end-line="56" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/add_user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="67" column="27" selection-start-line="67" selection-start-column="27" selection-end-line="67" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/clicks_replies.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="53" column="120" lean-forward="true" selection-start-line="52" selection-start-column="76" selection-end-line="53" selection-end-column="120" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/xml/postprofile.dtd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="43" selection-start-column="43" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/post.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="96" column="35" selection-start-line="96" selection-start-column="35" selection-end-line="96" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/xml/post_1.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="39" lean-forward="true" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/section.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="147" selection-start-line="147" selection-end-line="147" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/jquery-3.3.1.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="718">
+          <caret line="1" column="75022" lean-forward="true" selection-start-line="1" selection-start-column="75022" selection-end-line="1" selection-end-column="75022" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3306">
+          <caret line="174" selection-start-line="174" selection-end-line="174" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/xml/sec_1.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="19" lean-forward="true" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/xml/user_User0.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="10" column="47" lean-forward="true" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.1/system/python_stubs/1883956565/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="352" column="4" selection-start-line="352" selection-start-column="4" selection-end-line="352" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/allsections.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1919">
+          <caret line="101" column="51" selection-start-line="101" selection-start-column="47" selection-end-line="101" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4671">
+          <caret line="1050" column="50" selection-start-line="1050" selection-start-column="50" selection-end-line="1050" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <element signature="e#323#3749#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/minibbs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6973">
+          <caret line="376" column="14" selection-start-line="376" selection-start-column="14" selection-end-line="376" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

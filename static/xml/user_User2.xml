@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE User
+  SYSTEM 'userprofile.dtd'>
+	<User>
+		<UserName>User2</UserName>
+		<Info>
+			<BasicInfo>
+				<Gender>Male</Gender>
+				<Age>20</Age>
+				<Level>3</Level>
+				<Birthday>1998-01-01</Birthday>
+				<Email>user2@pku.edu.cn</Email>
+			</BasicInfo>
+			<OtherInfo>
+				<Posts>
+					<Post>
+						<No>303</No>
+						<Block>School Life</Block>
+						<PostUser>User2</PostUser>
+						<Title>Hello world!!!</Title>
+						<Content>I am really new here. Lets start chatting!</Content>
+						<PostTime>2018-12-30 01:59:33</PostTime>
+						<Clicks>0</Clicks>
+						<ReplyNum>0</ReplyNum>
+					</Post>
+					<Post>
+						<No>7</No>
+						<Block>School Life</Block>
+						<PostUser>User2</PostUser>
+						<Title>Hello world!</Title>
+						<Content>I am new here. Lets start chatting!</Content>
+						<PostTime>2018-12-29 19:35:58</PostTime>
+						<Clicks>0</Clicks>
+						<ReplyNum>10</ReplyNum>
+					</Post>
+					<Post>
+						<No>8</No>
+						<Block>Lectures</Block>
+						<PostUser>User2</PostUser>
+						<Title>Good lecture!</Title>
+						<Content>I want to attend this lecture~</Content>
+						<PostTime>2018-12-29 19:35:58</PostTime>
+						<Clicks>0</Clicks>
+						<ReplyNum>10</ReplyNum>
+					</Post>
+					<Post>
+						<No>9</No>
+						<Block>Job</Block>
+						<PostUser>User2</PostUser>
+						<Title>Looking for jobs.</Title>
+						<Content>I am looking for jobs.</Content>
+						<PostTime>2018-12-29 19:35:58</PostTime>
+						<Clicks>0</Clicks>
+						<ReplyNum>10</ReplyNum>
+					</Post>
+				</Posts>
+				<Replies/>
+			</OtherInfo>
+		</Info>
+	</User>

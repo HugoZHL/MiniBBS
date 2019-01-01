@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Post
+  SYSTEM 'postprofile.dtd'>
+	<Post>
+		<No>3</No>
+		<PostUser>User0</PostUser>
+		<Block>Job</Block>
+		<Title>Looking for jobs.</Title>
+		<Content>I am looking for jobs.</Content>
+		<PostTime>2018-12-29 19:35:58</PostTime>
+		<Clicks>3</Clicks>
+		<ReplyNum>11</ReplyNum>
+		<Replies>
+			<Reply>
+				<Floor>1</Floor>
+				<OriginalNo>11</OriginalNo>
+				<ReplyUser>HugoZ</ReplyUser>
+				<ReplyContent>Good Post!</ReplyContent>
+				<ReplyTime>2018-12-29 21:25:15</ReplyTime>
+				<PraiseNum>0</PraiseNum>
+			</Reply>
+			<Reply>
+				<Floor>2</Floor>
+				<OriginalNo>12</OriginalNo>
+				<ReplyUser>TPF</ReplyUser>
+				<ReplyContent>Good Post!</ReplyContent>
+				<ReplyTime>2018-12-29 21:25:15</ReplyTime>
+				<PraiseNum>0</PraiseNum>
+			</Reply>
+			<Reply>
+				<Floor>3</Floor>
+				<OriginalNo>13</OriginalNo>
+				<ReplyUser>WSB</ReplyUser>
+				<ReplyContent>Good Post!</ReplyContent>
+				<ReplyTime>2018-12-29 21:25:15</ReplyTime>
+				<PraiseNum>0</PraiseNum>
+			</Reply>
+			<Reply>
+				<Floor>4</Floor>
+				<OriginalNo>14</OriginalNo>
+				<ReplyUser>User0</ReplyUser>
+				<ReplyContent>Good Post!</ReplyContent>
+				<ReplyTime>2018-12-29 21:25:15</ReplyTime>
+				<PraiseNum>0</PraiseNum>
+			</Reply>
+			<Reply>
+				<Floor>5</Floor>
+				<OriginalNo>15</OriginalNo>
+				<ReplyUser>User1</ReplyUser>
+				<ReplyContent>Good Post!</ReplyContent>
+				<ReplyTime>2018-12-29 21:25:15</ReplyTime>
+				<PraiseNum>0</PraiseNum>
+			</Reply>
+			<Reply>
+				<Floor>6</Floor>
+				<OriginalNo>1511</OriginalNo>
+				<ReplyUser>User94</ReplyUser>
+				<ReplyContent>Good Post!</ReplyContent>
+				<ReplyTime>2018-12-30 01:57:29</ReplyTime>
+				<PraiseNum>0</PraiseNum>
+			</Reply>
+			<Reply>
+				<Floor>7</Floor>
+				<OriginalNo>1512</OriginalNo>
+				<ReplyUser>User95</ReplyUser>
+				<ReplyContent>Good Post!</ReplyContent>
+				<ReplyTime>2018-12-30 01:57:29</ReplyTime>
+				<PraiseNum>0</PraiseNum>
+			</Reply>
+			<Reply>
+				<Floor>8</Floor>
+				<OriginalNo>1513</OriginalNo>
+				<ReplyUser>User96</ReplyUser>
+				<ReplyContent>Good Post!</ReplyContent>
+				<ReplyTime>2018-12-30 01:57:29</ReplyTime>
+				<PraiseNum>0</PraiseNum>
+			</Reply>
+			<Reply>
+				<Floor>9</Floor>
+				<OriginalNo>1514</OriginalNo>
+				<ReplyUser>User97</ReplyUser>
+				<ReplyContent>Good Post!</ReplyContent>
+				<ReplyTime>2018-12-30 01:57:29</ReplyTime>
+				<PraiseNum>0</PraiseNum>
+			</Reply>
+			<Reply>
+				<Floor>10</Floor>
+				<OriginalNo>1515</OriginalNo>
+				<ReplyUser>User98</ReplyUser>
+				<ReplyContent>Good Post!</ReplyContent>
+				<ReplyTime>2018-12-30 01:57:29</ReplyTime>
+				<PraiseNum>0</PraiseNum>
+			</Reply>
+			<Reply>
+				<Floor>11</Floor>
+				<OriginalNo>1749</OriginalNo>
+				<ReplyUser>HugoZ</ReplyUser>
+				<ReplyContent>I'm also looking for a job.</ReplyContent>
+				<ReplyTime>2018-12-31 18:35:52</ReplyTime>
+				<PraiseNum>1</PraiseNum>
+			</Reply>
+		</Replies>
+	</Post>

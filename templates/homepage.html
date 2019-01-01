@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)https://v3.bootcss.com/examples/jumbotron/ -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="The homepage of minibbs.">
+    <meta name="author" content="Hugo Z">
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+
+    <title>MiniBBS</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" >
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/ie10-viewport-bug-workaround.css') }}" >
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/jumbotron.css') }}">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="{{ url_for('homepage') }}">MiniBBS, the most popular bbs in PKU(besides WeimingBBS).</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <form class="navbar-form navbar-right">
+              <a href="{{ url_for('login') }}" class="btn btn-success">Sign in</a>
+              <a href="{{ url_for('register') }}" class="btn btn-default">Sign up</a>
+          </form>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>MiniBBS</h1>
+        <p>This is a forum for students in PKU. It includes many blocks and posts by different people. You can post, reply, make friends with others on this website. Enjoy you life here!</p>
+        <p>To sign in or sign up, please press the button on the navigating bar.</p>
+      </div>
+    </div>
+
+    <div class="container" style="margin-top:80px">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <img src="{{ url_for('static', filename='images/p1.jpg') }}" height="180" width="320"/>
+        </div>
+        <div class="col-md-4">
+          <img src="{{ url_for('static', filename='images/p2.jpg') }}" height="180" width="320"/>
+       </div>
+        <div class="col-md-4">
+          <img src="{{ url_for('static', filename='images/p3.jpg') }}" height="180" width="320"/>
+        </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p>Copyright © Database Course Team; Credit to: Hugo Z, pfTong, Alpha Wu.</p>
+      </footer>
+    </div> <!-- /container -->
+  
+
+</body></html>

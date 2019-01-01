@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Post
+  SYSTEM 'postprofile.dtd'>
+	<Post>
+		<No>342</No>
+		<PostUser>Complicated</PostUser>
+		<Block>School Life</Block>
+		<Title>Hey man, anyone go hiking this weekend?</Title>
+		<Content>Come with me and enjoy your life!</Content>
+		<PostTime>2018-12-31 18:45:56</PostTime>
+		<Clicks>12</Clicks>
+		<ReplyNum>1</ReplyNum>
+		<Replies>
+			<Reply>
+				<Floor>1</Floor>
+				<OriginalNo>1751</OriginalNo>
+				<ReplyUser>Complicated</ReplyUser>
+				<ReplyContent>anyone?</ReplyContent>
+				<ReplyTime>2018-12-31 18:46:30</ReplyTime>
+				<PraiseNum>9</PraiseNum>
+			</Reply>
+		</Replies>
+	</Post>

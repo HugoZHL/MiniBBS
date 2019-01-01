@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)https://v3.bootcss.com/examples/jumbotron/ -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="The post page in minibbs.">
+    <meta name="author" content="Hugo Z">
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+
+    <title>MiniBBS Post</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" >
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/ie10-viewport-bug-workaround.css') }}" >
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/jumbotron.css') }}">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="{{ url_for('show_all_sections') }}">MiniBBS</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <div class="navbar-left">
+            <a class="navbar-brand" href="{{ url_for('show_profile') }}"><p> User: {{ username }} </p></a>
+             <div class="navbar-brand">Post</div>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <form class="navbar-form navbar-right" method="post">
+                <a href="{{ url_for('show_section', section_id=sectionid) }}" class="btn btn-danger">Back to Section</a>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Anything interesting?" name="searching" required>
+              </div>
+              <button type="submit" class="btn btn-primary">Search</button>
+              <a href="{{ url_for('search') }}" class="btn btn-success">Advanced Search</a>
+              {% if admin %}
+              <a href="{{ url_for('manage_user') }}" class="btn btn-warning">Manage Users</a>
+              {% endif %}
+            </form>
+          </div><!--/.navbar-collapse -->
+        </div>
+      </div>
+    </nav>
+
+
+    <div id="post_id" d="{{ post_id }}" style="display:none"></div>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="container" style="margin-top:1vw" id="withincode">
+        <script type="text/javascript">
+        if (window.XMLHttpRequest)
+        {// code for IE7+, Firefox, Chrome, Opera, Safari
+          xmlhttp=new XMLHttpRequest();
+        }
+        else
+        {// code for IE6, IE5
+          xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        let filename = "../static/xml/post_";
+        let temp_secname = document.getElementById('post_id').getAttribute('d');
+        filename = filename+temp_secname;
+        filename = filename+".xml";
+        xmlhttp.open("GET", filename+"?t="+Math.random(), false);
+        xmlhttp.send();
+        xmlDoc=xmlhttp.responseXML;
+        let post = xmlDoc.getElementsByTagName("Post")[0];
+        document.write("<div class='page-header'><h1>Title: ");
+        document.write(post.getElementsByTagName("Title")[0].childNodes[0].nodeValue);
+        document.write("</h1><h2>");
+        document.write(post.getElementsByTagName("Content")[0].childNodes[0].nodeValue);
+        document.write("</h2><div class='row'><div class='col-md-2'><h4>");
+        document.write(post.getElementsByTagName("Block")[0].childNodes[0].nodeValue);
+        document.write("</h4></div><div class='col-md-1'><h4> #");
+        document.write(post.getElementsByTagName("No")[0].childNodes[0].nodeValue);
+        document.write("</h4></div><div class='col-md-2'><h4> User: ");
+        document.write(post.getElementsByTagName("PostUser")[0].childNodes[0].nodeValue);
+        document.write("</h4></div><div class='col-md-3'><h4> Post Time: ");
+        document.write(post.getElementsByTagName("PostTime")[0].childNodes[0].nodeValue);
+        document.write("</h4></div><div class='col-md-2'><h4> Clicks: ");
+        document.write(post.getElementsByTagName("Clicks")[0].childNodes[0].nodeValue);
+        document.write("</h4></div><div class='col-md-2'><h4> ReplyNum: ");
+        document.write(post.getElementsByTagName("ReplyNum")[0].childNodes[0].nodeValue);
+        document.write("</h4></div></div></div>");
+
+        document.write("<form role='form' method='post' action='/add_reply'>");
+        document.write("<div class='input-group'>");
+        document.write("<input type='text' class='form-control' name='reply' placeholder='Reply here~' required><span class='input-group-btn'>");
+        document.write("<button class='btn btn-default' name='postingID' value="+post.getElementsByTagName("No")[0].childNodes[0].nodeValue+" type='submit'>Submit</button></span></div></form><br>");
+
+        let replies = post.getElementsByTagName("Replies")[0].getElementsByTagName("Reply");
+
+        for (i=0;i<replies.length;i++)
+        {
+            document.write("<div class='jumbotron'><div class='row'><p><div class='col-md-1'># ");
+            document.write(replies[i].getElementsByTagName("Floor")[0].childNodes[0].nodeValue);
+            document.write("</div><div class='col-md-3'>User: ");
+            document.write(replies[i].getElementsByTagName("ReplyUser")[0].childNodes[0].nodeValue);
+            document.write("</div><div class='col-md-3'>Time: ");
+            document.write(replies[i].getElementsByTagName("ReplyTime")[0].childNodes[0].nodeValue);
+            document.write("</div><div class='col-md-2'>Praises: ");
+            document.write(replies[i].getElementsByTagName("PraiseNum")[0].childNodes[0].nodeValue);
+            document.write("</div><div class='col-md-2'><form method='post' action='/add_praise'>");
+            document.write("<button type='submit' class='btn btn-primary' name='praising' value="+replies[i].getElementsByTagName("OriginalNo")[0].childNodes[0].nodeValue+">Praise!</button>");
+            document.write("</form></div></p></div><h2>");
+            //document.write("</div></p></div><h2>");
+
+            document.write(replies[i].getElementsByTagName("ReplyContent")[0].childNodes[0].nodeValue);
+            document.write("</h2></div>");
+        }
+
+        document.write("<hr><footer><p>Copyright © Database Course Team; Credit to: Hugo Z, pfTong, Alpha Wu.</p></footer>");
+        xmlhttp.close()
+      </script>
+    </div>
+
+
+
+</body></html>

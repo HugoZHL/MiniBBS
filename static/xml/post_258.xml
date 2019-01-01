@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Post
+  SYSTEM 'postprofile.dtd'>
+	<Post>
+		<No>258</No>
+		<PostUser>User85</PostUser>
+		<Block>Sports</Block>
+		<Title>Good game</Title>
+		<Content>Peking University Sports Events are so great!</Content>
+		<PostTime>2018-12-29 19:35:58</PostTime>
+		<Clicks>1</Clicks>
+		<ReplyNum>5</ReplyNum>
+		<Replies>
+			<Reply>
+				<Floor>1</Floor>
+				<OriginalNo>1286</OriginalNo>
+				<ReplyUser>HugoZ</ReplyUser>
+				<ReplyContent>Good Post!</ReplyContent>
+				<ReplyTime>2018-12-29 21:25:16</ReplyTime>
+				<PraiseNum>0</PraiseNum>
+			</Reply>
+			<Reply>
+				<Floor>2</Floor>
+				<OriginalNo>1287</OriginalNo>
+				<ReplyUser>TPF</ReplyUser>
+				<ReplyContent>Good Post!</ReplyContent>
+				<ReplyTime>2018-12-29 21:25:16</ReplyTime>
+				<PraiseNum>0</PraiseNum>
+			</Reply>
+			<Reply>
+				<Floor>3</Floor>
+				<OriginalNo>1288</OriginalNo>
+				<ReplyUser>WSB</ReplyUser>
+				<ReplyContent>Good Post!</ReplyContent>
+				<ReplyTime>2018-12-29 21:25:16</ReplyTime>
+				<PraiseNum>0</PraiseNum>
+			</Reply>
+			<Reply>
+				<Floor>4</Floor>
+				<OriginalNo>1289</OriginalNo>
+				<ReplyUser>User0</ReplyUser>
+				<ReplyContent>Good Post!</ReplyContent>
+				<ReplyTime>2018-12-29 21:25:16</ReplyTime>
+				<PraiseNum>0</PraiseNum>
+			</Reply>
+			<Reply>
+				<Floor>5</Floor>
+				<OriginalNo>1290</OriginalNo>
+				<ReplyUser>User1</ReplyUser>
+				<ReplyContent>Good Post!</ReplyContent>
+				<ReplyTime>2018-12-29 21:25:16</ReplyTime>
+				<PraiseNum>0</PraiseNum>
+			</Reply>
+		</Replies>
+	</Post>

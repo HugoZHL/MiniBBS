@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Post
+  SYSTEM 'postprofile.dtd'>
+	<Post>
+		<No>5</No>
+		<PostUser>User1</PostUser>
+		<Title>Good lecture!</Title>
+		<Content>I want to attend this lecture~</Content>
+		<PostTime>2018-12-29 19:35:58</PostTime>
+		<Clicks>1</Clicks>
+		<ReplyNum>10</ReplyNum>
+		<Replies>
+			<Reply>
+				<Floor>1</Floor>
+				<OriginalNo>21</OriginalNo>
+				<ReplyUser>HugoZ</ReplyUser>
+				<ReplyContent>Good Post!</ReplyContent>
+				<ReplyTime>2018-12-29 21:25:15</ReplyTime>
+				<PraiseNum>0</PraiseNum>
+			</Reply>
+			<Reply>
+				<Floor>2</Floor>
+				<OriginalNo>22</OriginalNo>
+				<ReplyUser>TPF</ReplyUser>
+				<ReplyContent>Good Post!</ReplyContent>
+				<ReplyTime>2018-12-29 21:25:15</ReplyTime>
+				<PraiseNum>0</PraiseNum>
+			</Reply>
+			<Reply>
+				<Floor>3</Floor>
+				<OriginalNo>23</OriginalNo>
+				<ReplyUser>WSB</ReplyUser>
+				<ReplyContent>Good Post!</ReplyContent>
+				<ReplyTime>2018-12-29 21:25:15</ReplyTime>
+				<PraiseNum>0</PraiseNum>
+			</Reply>
+			<Reply>
+				<Floor>4</Floor>
+				<OriginalNo>24</OriginalNo>
+				<ReplyUser>User0</ReplyUser>
+				<ReplyContent>Good Post!</ReplyContent>
+				<ReplyTime>2018-12-29 21:25:15</ReplyTime>
+				<PraiseNum>0</PraiseNum>
+			</Reply>
+			<Reply>
+				<Floor>5</Floor>
+				<OriginalNo>25</OriginalNo>
+				<ReplyUser>User1</ReplyUser>
+				<ReplyContent>Good Post!</ReplyContent>
+				<ReplyTime>2018-12-29 21:25:15</ReplyTime>
+				<PraiseNum>0</PraiseNum>
+			</Reply>
+			<Reply>
+				<Floor>6</Floor>
+				<OriginalNo>1521</OriginalNo>
+				<ReplyUser>User94</ReplyUser>
+				<ReplyContent>Good Post!</ReplyContent>
+				<ReplyTime>2018-12-30 01:57:29</ReplyTime>
+				<PraiseNum>0</PraiseNum>
+			</Reply>
+			<Reply>
+				<Floor>7</Floor>
+				<OriginalNo>1522</OriginalNo>
+				<ReplyUser>User95</ReplyUser>
+				<ReplyContent>Good Post!</ReplyContent>
+				<ReplyTime>2018-12-30 01:57:29</ReplyTime>
+				<PraiseNum>0</PraiseNum>
+			</Reply>
+			<Reply>
+				<Floor>8</Floor>
+				<OriginalNo>1523</OriginalNo>
+				<ReplyUser>User96</ReplyUser>
+				<ReplyContent>Good Post!</ReplyContent>
+				<ReplyTime>2018-12-30 01:57:29</ReplyTime>
+				<PraiseNum>0</PraiseNum>
+			</Reply>
+			<Reply>
+				<Floor>9</Floor>
+				<OriginalNo>1524</OriginalNo>
+				<ReplyUser>User97</ReplyUser>
+				<ReplyContent>Good Post!</ReplyContent>
+				<ReplyTime>2018-12-30 01:57:29</ReplyTime>
+				<PraiseNum>0</PraiseNum>
+			</Reply>
+			<Reply>
+				<Floor>10</Floor>
+				<OriginalNo>1525</OriginalNo>
+				<ReplyUser>User98</ReplyUser>
+				<ReplyContent>Good Post!</ReplyContent>
+				<ReplyTime>2018-12-30 01:57:29</ReplyTime>
+				<PraiseNum>0</PraiseNum>
+			</Reply>
+		</Replies>
+	</Post>

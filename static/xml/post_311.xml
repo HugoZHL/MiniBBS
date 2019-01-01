@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Post
+  SYSTEM 'postprofile.dtd'>
+	<Post>
+		<No>311</No>
+		<PostUser>HugoZ</PostUser>
+		<Block>School Life</Block>
+		<Title>大家好！</Title>
+		<Content>欢迎大家来到MiniBBS！</Content>
+		<PostTime>2018-12-30 21:20:24</PostTime>
+		<Clicks>7</Clicks>
+		<ReplyNum>1</ReplyNum>
+		<Replies>
+			<Reply>
+				<Floor>1</Floor>
+				<OriginalNo>1750</OriginalNo>
+				<ReplyUser>HugoZ</ReplyUser>
+				<ReplyContent>这是怎么回事？</ReplyContent>
+				<ReplyTime>2018-12-31 18:36:47</ReplyTime>
+				<PraiseNum>1</PraiseNum>
+			</Reply>
+		</Replies>
+	</Post>

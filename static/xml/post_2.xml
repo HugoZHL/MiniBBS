@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Post
+  SYSTEM 'postprofile.dtd'>
+	<Post>
+		<No>2</No>
+		<PostUser>User0</PostUser>
+		<Block>Lectures</Block>
+		<Title>Good lecture!</Title>
+		<Content>I want to attend this lecture~</Content>
+		<PostTime>2018-12-29 19:35:58</PostTime>
+		<Clicks>6</Clicks>
+		<ReplyNum>11</ReplyNum>
+		<Replies>
+			<Reply>
+				<Floor>1</Floor>
+				<OriginalNo>6</OriginalNo>
+				<ReplyUser>HugoZ</ReplyUser>
+				<ReplyContent>Good Post!</ReplyContent>
+				<ReplyTime>2018-12-29 21:25:15</ReplyTime>
+				<PraiseNum>1</PraiseNum>
+			</Reply>
+			<Reply>
+				<Floor>2</Floor>
+				<OriginalNo>7</OriginalNo>
+				<ReplyUser>TPF</ReplyUser>
+				<ReplyContent>Good Post!</ReplyContent>
+				<ReplyTime>2018-12-29 21:25:15</ReplyTime>
+				<PraiseNum>0</PraiseNum>
+			</Reply>
+			<Reply>
+				<Floor>3</Floor>
+				<OriginalNo>8</OriginalNo>
+				<ReplyUser>WSB</ReplyUser>
+				<ReplyContent>Good Post!</ReplyContent>
+				<ReplyTime>2018-12-29 21:25:15</ReplyTime>
+				<PraiseNum>0</PraiseNum>
+			</Reply>
+			<Reply>
+				<Floor>4</Floor>
+				<OriginalNo>9</OriginalNo>
+				<ReplyUser>User0</ReplyUser>
+				<ReplyContent>Good Post!</ReplyContent>
+				<ReplyTime>2018-12-29 21:25:15</ReplyTime>
+				<PraiseNum>0</PraiseNum>
+			</Reply>
+			<Reply>
+				<Floor>5</Floor>
+				<OriginalNo>10</OriginalNo>
+				<ReplyUser>User1</ReplyUser>
+				<ReplyContent>Good Post!</ReplyContent>
+				<ReplyTime>2018-12-29 21:25:15</ReplyTime>
+				<PraiseNum>0</PraiseNum>
+			</Reply>
+			<Reply>
+				<Floor>6</Floor>
+				<OriginalNo>1506</OriginalNo>
+				<ReplyUser>User94</ReplyUser>
+				<ReplyContent>Good Post!</ReplyContent>
+				<ReplyTime>2018-12-30 01:57:29</ReplyTime>
+				<PraiseNum>0</PraiseNum>
+			</Reply>
+			<Reply>
+				<Floor>7</Floor>
+				<OriginalNo>1507</OriginalNo>
+				<ReplyUser>User95</ReplyUser>
+				<ReplyContent>Good Post!</ReplyContent>
+				<ReplyTime>2018-12-30 01:57:29</ReplyTime>
+				<PraiseNum>0</PraiseNum>
+			</Reply>
+			<Reply>
+				<Floor>8</Floor>
+				<OriginalNo>1508</OriginalNo>
+				<ReplyUser>User96</ReplyUser>
+				<ReplyContent>Good Post!</ReplyContent>
+				<ReplyTime>2018-12-30 01:57:29</ReplyTime>
+				<PraiseNum>0</PraiseNum>
+			</Reply>
+			<Reply>
+				<Floor>9</Floor>
+				<OriginalNo>1509</OriginalNo>
+				<ReplyUser>User97</ReplyUser>
+				<ReplyContent>Good Post!</ReplyContent>
+				<ReplyTime>2018-12-30 01:57:29</ReplyTime>
+				<PraiseNum>0</PraiseNum>
+			</Reply>
+			<Reply>
+				<Floor>10</Floor>
+				<OriginalNo>1510</OriginalNo>
+				<ReplyUser>User98</ReplyUser>
+				<ReplyContent>Good Post!</ReplyContent>
+				<ReplyTime>2018-12-30 01:57:29</ReplyTime>
+				<PraiseNum>0</PraiseNum>
+			</Reply>
+			<Reply>
+				<Floor>11</Floor>
+				<OriginalNo>1752</OriginalNo>
+				<ReplyUser>Complicated</ReplyUser>
+				<ReplyContent>which one?</ReplyContent>
+				<ReplyTime>2018-12-31 18:55:24</ReplyTime>
+				<PraiseNum>0</PraiseNum>
+			</Reply>
+		</Replies>
+	</Post>

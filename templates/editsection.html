@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="The section-edit page of minibbs.">
+    <meta name="author" content="Hugo Z">
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+
+    <title>MiniBBS Section Editing</title>
+
+    <!-- Bootstrap core CSS -->
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" >
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/ie10-viewport-bug-workaround.css') }}" >
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/signin.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/jumbotron.css') }}">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="{{ url_for('static', filename='js/ie8-responsive-file-warning.js') }}"></script><![endif]-->
+    <script src="{{ url_for('static', filename='js/ie-emulation-modes-warning.js') }}"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+
+        <div class="form row">
+            <form class="form-horizontal col-sm-offset-4 col-md-offset-4 col-lg-offset-4" id="register_form" method="post">
+                <h3 class="form-title">Please modify the information of <br/>section "{{ sec['name'] }}":</h3>
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="form-group">
+                        <label>Section Name</label>
+                        <i class="fa fa-user fa-lg"></i>
+                        <input class="form-control" type="text" value="{{ sec['name'] }}"
+                               name="section_name" required autofocus="autofocus"/>
+                    </div>
+                    {% if admin %}
+                    <div class="form-group">
+                        <label>Master</label>
+                        <i class="fa fa-lock fa-lg"></i>
+                        <input class="form-control" type="text" oninput="value=value.replace(/[^a-zA-Z0-9]/g,'')"
+                               value="{{ sec['master'] }}" name="master" required/>
+                    </div>
+                    {% endif %}
+                    <div class="form-group">
+                        <label>Description</label>
+                        <i class="fa fa-check fa-lg"></i>
+                        <input class="form-control" type="text" name="description"
+                               value="{{ sec['description'] }}" required/>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+                    </div>
+                    {% if error %}
+                    <p style="color:red">{{ error }}</p>
+                    {% endif %}
+                </div>
+            </form>
+        </div>
+    </div> <!-- /container -->
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="{{ url_for('static', filename='js/ie10-viewport-bug-workaround.js') }}"></script>
+  </body>
+</html>

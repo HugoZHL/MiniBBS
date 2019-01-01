@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="The profile editing page of minibbs.">
+    <meta name="author" content="Hugo Z">
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+
+    <title>MiniBBS Edit Profile</title>
+
+    <!-- Bootstrap core CSS -->
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" >
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/ie10-viewport-bug-workaround.css') }}" >
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/signin.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/jumbotron.css') }}">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="{{ url_for('static', filename='js/ie8-responsive-file-warning.js') }}"></script><![endif]-->
+    <script src="{{ url_for('static', filename='js/ie-emulation-modes-warning.js') }}"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+
+        <div class="form row">
+            <form class="form-horizontal col-sm-offset-4 col-md-offset-4 col-lg-offset-4" id="register_form" method="post">
+                <h3 class="form-title">Edit information here:</h3>
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="form-group">
+                        <label>Username</label>
+                        <i class="fa fa-user fa-lg"></i>
+                        <input class="form-control" type="text" value="{{ user['username'] }}" placeholder="Username" required disabled/>
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <i class="fa fa-lock fa-lg"></i>
+                        <input class="form-control" type="password" placeholder="Password" id="register_password" name="password" required autofocus="autofocus"/>
+                    </div>
+                    <div class="form-group">
+                        <label>Re-type Password</label>
+                        <i class="fa fa-check fa-lg"></i>
+                        <input class="form-control" type="password" placeholder="Re-type Your Password" name="rpassword" required/>
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <i class="fa fa-envelope fa-lg"></i>
+                        <input class="form-control" type="email" placeholder="Email Address" name="email" value="{{ user['email'] }}" required/>
+                    </div>
+                    <div class="form-group">
+                        <label>Gender</label>
+                        <i class="fa fa-envelope fa-lg"></i>
+                        <select class="form-control" name="gender"  required>
+                            {% if user['gender'] == 'Male' %}
+                            <option value="Male" selected>Male</option>
+                            <option value="Female">Female</option>
+                            {% else %}
+                            <option value="Male">Male</option>
+                            <option value="Female" selected>Female</option>
+                            {% endif %}
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Birthday</label>
+                        <i class="fa fa-envelope fa-lg"></i>
+                        <input data-date-format="YYYY-MM-DD" class="form-control" type="date" name="birthday" value="{{ user['birthday'] }}" required/>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-lg btn-primary btn-block" type="submit">Modify</button>
+                    </div>
+
+    {% if error != None %}
+    <p><font color="red">{{ error }}</font></p>
+    {% endif %}
+                </div>
+            </form>
+        </div>
+    </div> <!-- /container -->
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="{{ url_for('static', filename='js/ie10-viewport-bug-workaround.js') }}"></script>
+  </body>
+</html>

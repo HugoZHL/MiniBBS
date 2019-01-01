@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Post
+  SYSTEM 'postprofile.dtd'>
+	<Post>
+		<No>1</No>
+		<PostUser>User0</PostUser>
+		<Block>School Life</Block>
+		<Title>Hello world!</Title>
+		<Content>I am new here. Lets start chatting!</Content>
+		<PostTime>2018-12-29 19:35:58</PostTime>
+		<Clicks>38</Clicks>
+		<ReplyNum>12</ReplyNum>
+		<Replies>
+			<Reply>
+				<Floor>1</Floor>
+				<OriginalNo>1</OriginalNo>
+				<ReplyUser>HugoZ</ReplyUser>
+				<ReplyContent>Good Post!</ReplyContent>
+				<ReplyTime>2018-12-29 21:25:15</ReplyTime>
+				<PraiseNum>5</PraiseNum>
+			</Reply>
+			<Reply>
+				<Floor>2</Floor>
+				<OriginalNo>2</OriginalNo>
+				<ReplyUser>TPF</ReplyUser>
+				<ReplyContent>Good Post!</ReplyContent>
+				<ReplyTime>2018-12-29 21:25:15</ReplyTime>
+				<PraiseNum>1</PraiseNum>
+			</Reply>
+			<Reply>
+				<Floor>3</Floor>
+				<OriginalNo>3</OriginalNo>
+				<ReplyUser>WSB</ReplyUser>
+				<ReplyContent>Good Post!</ReplyContent>
+				<ReplyTime>2018-12-29 21:25:15</ReplyTime>
+				<PraiseNum>0</PraiseNum>
+			</Reply>
+			<Reply>
+				<Floor>4</Floor>
+				<OriginalNo>4</OriginalNo>
+				<ReplyUser>User0</ReplyUser>
+				<ReplyContent>Good Post!</ReplyContent>
+				<ReplyTime>2018-12-29 21:25:15</ReplyTime>
+				<PraiseNum>0</PraiseNum>
+			</Reply>
+			<Reply>
+				<Floor>5</Floor>
+				<OriginalNo>5</OriginalNo>
+				<ReplyUser>User1</ReplyUser>
+				<ReplyContent>Good Post!</ReplyContent>
+				<ReplyTime>2018-12-29 21:25:15</ReplyTime>
+				<PraiseNum>0</PraiseNum>
+			</Reply>
+			<Reply>
+				<Floor>6</Floor>
+				<OriginalNo>1501</OriginalNo>
+				<ReplyUser>User94</ReplyUser>
+				<ReplyContent>Good Post!</ReplyContent>
+				<ReplyTime>2018-12-30 01:57:29</ReplyTime>
+				<PraiseNum>0</PraiseNum>
+			</Reply>
+			<Reply>
+				<Floor>7</Floor>
+				<OriginalNo>1502</OriginalNo>
+				<ReplyUser>User95</ReplyUser>
+				<ReplyContent>Good Post!</ReplyContent>
+				<ReplyTime>2018-12-30 01:57:29</ReplyTime>
+				<PraiseNum>0</PraiseNum>
+			</Reply>
+			<Reply>
+				<Floor>8</Floor>
+				<OriginalNo>1503</OriginalNo>
+				<ReplyUser>User96</ReplyUser>
+				<ReplyContent>Good Post!</ReplyContent>
+				<ReplyTime>2018-12-30 01:57:29</ReplyTime>
+				<PraiseNum>0</PraiseNum>
+			</Reply>
+			<Reply>
+				<Floor>9</Floor>
+				<OriginalNo>1504</OriginalNo>
+				<ReplyUser>User97</ReplyUser>
+				<ReplyContent>Good Post!</ReplyContent>
+				<ReplyTime>2018-12-30 01:57:29</ReplyTime>
+				<PraiseNum>0</PraiseNum>
+			</Reply>
+			<Reply>
+				<Floor>10</Floor>
+				<OriginalNo>1505</OriginalNo>
+				<ReplyUser>User98</ReplyUser>
+				<ReplyContent>Good Post!</ReplyContent>
+				<ReplyTime>2018-12-30 01:57:29</ReplyTime>
+				<PraiseNum>0</PraiseNum>
+			</Reply>
+			<Reply>
+				<Floor>11</Floor>
+				<OriginalNo>1746</OriginalNo>
+				<ReplyUser>HugoZ</ReplyUser>
+				<ReplyContent>Human's nature is repeater.</ReplyContent>
+				<ReplyTime>2018-12-31 12:39:14</ReplyTime>
+				<PraiseNum>1</PraiseNum>
+			</Reply>
+			<Reply>
+				<Floor>12</Floor>
+				<OriginalNo>1747</OriginalNo>
+				<ReplyUser>HugoZ</ReplyUser>
+				<ReplyContent>Human's nature is repeater.</ReplyContent>
+				<ReplyTime>2018-12-31 12:44:08</ReplyTime>
+				<PraiseNum>1</PraiseNum>
+			</Reply>
+		</Replies>
+	</Post>

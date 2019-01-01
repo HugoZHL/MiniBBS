@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Post
+  SYSTEM 'postprofile.dtd'>
+	<Post>
+		<No>341</No>
+		<PostUser>HugoZ</PostUser>
+		<Title>Test</Title>
+		<Content>I'm writeing this post for testing.</Content>
+		<PostTime>2018-12-31 18:12:29</PostTime>
+		<Clicks>7</Clicks>
+		<ReplyNum>1</ReplyNum>
+		<Replies>
+			<Reply>
+				<Floor>1</Floor>
+				<OriginalNo>1748</OriginalNo>
+				<ReplyUser>HugoZ</ReplyUser>
+				<ReplyContent>Good!</ReplyContent>
+				<ReplyTime>2018-12-31 18:22:13</ReplyTime>
+				<PraiseNum>0</PraiseNum>
+			</Reply>
+		</Replies>
+	</Post>

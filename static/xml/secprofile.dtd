@@ -1,0 +1,23 @@
+        <!ELEMENT Section (Info, Posts)>
+        <!ELEMENT Info (SecId, SecName, Master, PostNum, Description)>
+        <!ELEMENT Posts (Post*)>
+        <!ELEMENT Post (No, PostUser, Title, Content, PostTime, Clicks, Replies)>
+        <!ELEMENT Replies (Reply*)>
+        <!ELEMENT Reply (Floor, ReplyUser, ReplyContent, ReplyTime, PraiseNum)>
+        <!ELEMENT SecId (#PCDATA)>
+        <!ELEMENT SecName (#PCDATA)>
+        <!ELEMENT Master (#PCDATA)>
+        <!ELEMENT PostNum (#PCDATA)>
+        <!ELEMENT Description (#PCDATA)>
+        <!ELEMENT No (#PCDATA)>
+        <!ELEMENT Block (#PCDATA)>
+        <!ELEMENT PostUser (#PCDATA)>
+        <!ELEMENT Title (#PCDATA)>
+        <!ELEMENT Content (#PCDATA)>
+        <!ELEMENT PostTime (#PCDATA)>
+        <!ELEMENT Clicks (#PCDATA)>
+        <!ELEMENT Floor (#PCDATA)>
+        <!ELEMENT ReplyUser (#PCDATA)>
+        <!ELEMENT ReplyContent (#PCDATA)>
+        <!ELEMENT ReplyTime (#PCDATA)>
+        <!ELEMENT PraiseNum (#PCDATA)>
